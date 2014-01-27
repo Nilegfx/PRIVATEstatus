@@ -1,0 +1,181 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+.clearfix, ul li:not(.simple) {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 14, ../sass/screen.scss */
+body {
+  background-color: #ddd;
+  font-family: arial;
+  font-size: 13px;
+}
+
+/* line 23, ../sass/screen.scss */
+.box {
+  max-width: 600px;
+  background: #fff;
+  margin: 30px auto;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+  border-radius: 11px;
+  border: 1px solid #bbb;
+}
+/* line 29, ../sass/screen.scss */
+.box .box-header {
+  border-bottom: 1px solid #bebebe;
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #db0011), color-stop(100%, #b7000e));
+  background-image: -webkit-linear-gradient(#db0011, #b7000e);
+  background-image: -moz-linear-gradient(#db0011, #b7000e);
+  background-image: -o-linear-gradient(#db0011, #b7000e);
+  background-image: linear-gradient(#db0011, #b7000e);
+  padding: 10px;
+  color: white;
+}
+/* line 37, ../sass/screen.scss */
+.box .box-header h2 {
+  font-weight: bold;
+  margin: 5px;
+}
+
+/* line 44, ../sass/screen.scss */
+ul {
+  padding: 10px;
+}
+/* line 47, ../sass/screen.scss */
+ul li:not(.simple) {
+  border: 1px solid #bbb;
+  background-color: #f1f1f1;
+  margin-top: 5px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 54, ../sass/screen.scss */
+ul li:not(.simple):first-child {
+  margin-top: 0;
+}
+/* line 57, ../sass/screen.scss */
+ul li:not(.simple) .actions {
+  display: inline-block;
+  float: right;
+  color: #fff;
+  padding: 10px;
+  background-color: #db0011;
+}
+/* line 66, ../sass/screen.scss */
+ul li:not(.simple) .text {
+  padding: 10px;
+  display: block;
+}
+/* line 72, ../sass/screen.scss */
+ul a {
+  color: #999;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+  border: 1px solid #f2f2f2;
+  text-decoration: none;
+}
+/* line 81, ../sass/screen.scss */
+ul a:hover {
+  text-decoration: underline;
+}
+/* line 87, ../sass/screen.scss */
+ul textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+/* line 94, ../sass/screen.scss */
+ul .form-control {
+  margin-right: 5px;
+}
+/* line 98, ../sass/screen.scss */
+ul .danger {
+  color: red;
+}

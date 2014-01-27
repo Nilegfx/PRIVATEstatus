@@ -1,0 +1,101 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+
+.clearfix{
+  @include clearfix;
+}
+
+body{
+  background-color: #ddd;
+  font:{
+    family: arial;
+    size:13px;
+  }
+}
+
+
+.box{
+  max-width:600px;
+  background:#fff;
+  margin:30px auto;
+  @include border-radius(11px);
+  border: 1px solid #bbb;
+  .box-header{
+    border-bottom:1px solid darken(#f1f1f1,20);
+    @include border-top-radius(10px);
+    // background-color:#db0011;
+    @include background-image(linear-gradient(#db0011, darken(#db0011,7)));
+    padding:10px;
+    color:white;
+
+    h2{font:{weight:bold;}margin:5px;}
+  }
+  .box-content{
+
+  }
+}
+
+ul{
+  padding:10px;
+
+  li:not(.simple){
+    border:1px solid #bbb;
+    @extend .clearfix;
+    background-color:#f1f1f1;
+    // padding:10px;
+    margin-top:5px;
+    padding:10px;
+    &:first-child{margin-top:0;}
+    @include border-radius(5px);
+    
+    .actions{
+      display:inline-block;
+      float:right;
+      color:#fff;
+      padding:10px;
+      background:{
+        color:#db0011;
+      }
+    }
+    .text{
+      padding:10px;
+      // float:left;
+      display:block;
+    }
+  }
+  a{
+      color:#999;
+      display:inline-block;
+      padding:10px 20px;
+      margin-top:10px;
+      margin-right:5px;
+      border-radius:3px;
+      border:1px solid #f2f2f2;
+      text-decoration: none;
+      &:hover{
+        text:{
+          decoration:underline;
+        }
+      }
+    }
+    textarea{
+    	display:block;
+    	width:100%;
+    	border:1px solid #ccc;
+    	margin-top:10px;
+    	border-radius: 3px;
+    }
+    .form-control{
+    	margin-right:5px;
+    }
+
+    .danger{
+    	color:red;
+    }
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/stylesheets/screen.css">
+
+</head>
+
+<body id="app">
+
+	<div class="box">
+		<div class="box-header">
+			<h2>Title will be here</h2>
+		</div>
+		<div class="box-content" id="searchView">
+			<ul>
+				<li data-bind="text:id">nile</li>
+				<li data-bind="text:name">nile</li>
+				<li data-bind="text:title">nile</li>
+				<li data-bind="text:message">nile</li>
+			</ul>
+		</div>
+		<div class="box-content" id="profileView">
+			<ul>
+				<li data-bind="text:id">nile</li>
+				<li data-bind="text:name">nile</li>
+				<li data-bind="text:title">nile</li>
+				<li data-bind="text:message">nile</li>
+				<!-- ko ifnot: status.editMode() -->
+					<li class="simple"> <p data-bind="text:status.currentStatus"></p> </li>
+				<li class="simple">
+					<a href="#" data-bind="click:status.edit">Edit status</a>
+				</li>
+				<!-- /ko -->
+				<!-- ko if: status.editMode() -->
+				<li class="simple">
+					<div class="form-control">
+						<textarea name="" id="" cols="30" rows="10" data-bind="value:status.currentStatus,valueUpdate: 'afterkeydown', limitCharacters: 140"></textarea>
+					</div>
+				</li>
+				<li><p data-bind="{text:status.remainingChars,css:{danger:(status.remainingChars()<1)}}"></p></li>
+				<li class="simple">
+					<a href="#" data-bind="click:status.save">Save</a>
+					<a href="#" data-bind="click:status.cancel">cancel</a>
+				</li>
+				<!-- /ko -->
+				
+	</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="knockout-3.0.0.js"></script>
+	<script type="text/javascript" src="customBindings.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
