@@ -23,16 +23,17 @@ profileViewModel = new ViewModel(2,"profile Name","seach title");
 var Status = function(){
 		var self = this;
 		this.editMode = ko.observable(false),
-		this.currentStatus = ko.observable(" "),
+		this.currentStatus = ko.observable(null),
 		this.remainingChars = ko.computed(function(){
-			return (140 - this.currentStatus().length);
+			if(!(this.currentStatus() == null )){
+				return (140 - this.currentStatus().length);
+			}else{
+				return 140;
+			}
 		},self);
 		this.get = function(){},
 		this.edit = function(a){
 			self.editMode(true);
-			if(self.currentStatus() == " "){
-				self.currentStatus("");
-			}
 		},
 		this.save = function(){
 			self.editMode(false);
